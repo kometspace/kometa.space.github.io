@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PLSpace — Приглашения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body data-page="invite">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="title">PLSpace</div>
+      </div>
+      <div class="top-actions">
+        <div class="pill lang" title="Language">
+          <span>RU</span>
+          <i class="fa-solid fa-chevron-down" style="font-size:12px; opacity:.8"></i>
+        </div>
+        <a class="btn" href="profile.html"><i class="fa-solid fa-right-to-bracket"></i><span>Войти</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<p class="page-title">Приглашения</p>
+<p class="subtle">Система рефералов и бонусов (позже подключим к Firebase).</p>
+
+<div class="section">
+  <div class="card list">
+    <div class="notice">
+      <strong>Идея:</strong> даёшь другу ссылку, он регается → ты получаешь бонусы / скины.
+      <br><br>
+      На статике мы можем только показать UI. Для реального начисления нужен Firebase/Backend.
+    </div>
+    <div style="height:12px"></div>
+    <button class="btn" onclick="navigator.clipboard?.writeText(location.origin + '/?ref=YOUR_ID'); toast('Ссылка скопирована (пример).');">
+      <i class="fa-solid fa-link"></i><span>Скопировать ссылку</span>
+    </button>
+  </div>
+</div>
+
+    <div class="footer-pad"></div>
+  </main>
+
+  <nav class="bottomnav">
+    <div class="bottomnav-inner">
+      <a class="nav-item" data-page="home" href="index.html"><i class="fa-solid fa-house"></i><span>Главная</span></a>
+      <a class="nav-item" data-page="catalog" href="catalog.html"><i class="fa-solid fa-layer-group"></i><span>Каталог</span></a>
+      <a class="nav-item" data-page="keys" href="keys.html"><i class="fa-solid fa-key"></i><span>Ключи</span></a>
+      <a class="nav-item" data-page="invite" href="invite.html"><i class="fa-solid fa-user-plus"></i><span>Пригл.</span></a>
+      <a class="nav-item" data-page="profile" href="profile.html"><i class="fa-solid fa-star"></i><span>Профиль</span></a>
+    </div>
+  </nav>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

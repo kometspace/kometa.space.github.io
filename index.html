@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PLSpace — Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="title">PLSpace</div>
+      </div>
+      <div class="top-actions">
+        <div class="pill lang" title="Language">
+          <span>RU</span>
+          <i class="fa-solid fa-chevron-down" style="font-size:12px; opacity:.8"></i>
+        </div>
+        <a class="btn" href="profile.html"><i class="fa-solid fa-right-to-bracket"></i><span>Войти</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<div class="card hero">
+  <div class="hero-grid">
+    <div>
+      <h1 class="h-title">Маркетплейс для твоих проектов</h1>
+      <p class="h-sub">Каталог игр/проектов, ключи доступа и бонусы. Дизайн вдохновлён удобными мобильными маркетплейсами, но контент и бренд — твои.</p>
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="catalog.html"><i class="fa-solid fa-play"></i><span>Открыть каталог</span></a>
+        <a class="btn" href="keys.html"><i class="fa-solid fa-key"></i><span>Ключи</span></a>
+        <a class="btn" href="changelog.html"><i class="fa-solid fa-clock-rotate-left"></i><span>Changelog</span></a>
+      </div>
+      <hr class="sep">
+      <div class="notice">
+        <strong>Важно:</strong> GitHub Pages — статичный хостинг. Для “выдачи ключей на аккаунт” нужен Firebase/сервер.
+        В архиве есть готовые места, куда это подключить.
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Популярное</h2>
+  <div class="grid">
+    <a class="tile" href="catalog.html">
+      <div class="img"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="label">Project Leo</div>
+    </a>
+    <a class="tile" href="catalog.html">
+      <div class="img"><i class="fa-solid fa-cubes"></i></div>
+      <div class="label">BlockPack</div>
+    </a>
+    <a class="tile" href="catalog.html">
+      <div class="img"><i class="fa-solid fa-fire"></i></div>
+      <div class="label">Oxide</div>
+    </a>
+    <a class="tile" href="catalog.html">
+      <div class="img"><i class="fa-solid fa-gamepad"></i></div>
+      <div class="label">Free Fire</div>
+    </a>
+  </div>
+  <p class="subtle" style="margin-top:10px">Это заглушки — ты заменишь на свои игры и картинки.</p>
+</div>
+
+    <div class="footer-pad"></div>
+  </main>
+
+  <nav class="bottomnav">
+    <div class="bottomnav-inner">
+      <a class="nav-item" data-page="home" href="index.html"><i class="fa-solid fa-house"></i><span>Главная</span></a>
+      <a class="nav-item" data-page="catalog" href="catalog.html"><i class="fa-solid fa-layer-group"></i><span>Каталог</span></a>
+      <a class="nav-item" data-page="keys" href="keys.html"><i class="fa-solid fa-key"></i><span>Ключи</span></a>
+      <a class="nav-item" data-page="invite" href="invite.html"><i class="fa-solid fa-user-plus"></i><span>Пригл.</span></a>
+      <a class="nav-item" data-page="profile" href="profile.html"><i class="fa-solid fa-star"></i><span>Профиль</span></a>
+    </div>
+  </nav>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
